@@ -1,0 +1,87 @@
+{% extends 'productos/index.html'%}
+{% block contendido %}
+{% load static %}, 
+
+<main>
+<section>
+    <h1>Bienvenido a SA CONSULTING GROUP </h1>
+
+    <p>En SA CONSULTING GROUP ofrecemos servicios de asesoría y consultoría a empresas y particulares. Contamos con un equipo de profesionales altamente capacitados y con experiencia en diversas áreas.</p>
+  </section>
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+            aria-label="Slide 1" aria-current="true"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+            class=""></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+            class=""></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active" >
+            <a href="SERVICIOS.HTML"><img class="bd-placeholder-img" width="80%" height="464px"  src="{% static 'productos/img/reportecontable.png'%}"
+              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <rect width="100%"  height="100%" fill="var(--bs-secondary-color)"></rect>
+            </img></a>
+            <div class="container">
+                <div class="carousel-caption">
+                    <a class="btn btn-primary" href="SERVICIOS.HTML" role="button">SERVICIOS</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <a href="SERVICIOS.HTML"><img class="bd-placeholder-img" width="80%" height="464px" src="{% static 'productos/img/powerbi2.JPG'%}"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                 <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+            </img></a>
+            <div class="container">
+              <div class="carousel-caption">
+                  <a class="btn btn-primary" href="SERVICIOS.HTML" role="button">SERVICIOS</a>
+              </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="SERVICIOS.HTML"><img class="bd-placeholder-img" width="80%" height="464px" src="{% static 'productos/img/asesoria.jpg'%}"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+            </img></a>
+            <div class="container">
+              <div class="carousel-caption">
+                  <a class="btn btn-primary" href="SERVICIOS.HTML" role="button">SERVICIOS</a>
+              </div>
+          </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">ANTERIOR</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">SIGUIENTE</span>
+    </button>
+</div>
+<section>
+  <div>
+    <h2>¿No sabes cómo declarar tus impuestos y administrar tu negocio?</h2>
+    <h1>Te apoyamos con la contabilidad e impuestos de tu negocio.</h1>
+    <div class="guten-element guten-button-wrapper guten-BTgZlT"><a class="guten-button guten-button-sm __desktop-fadeInLeft" href="https://wa.me/56990984905"><span> Conversemos </span></a></div>
+    </div></div>
+    </div></div></div>
+    </div>
+</section>
+  <section>
+    <h2>Nuestros servicios</h2>
+    <ul>
+      <li>Asesoría fiscal y contable</li>
+      <li>Asesoría laboral</li>
+      <li>Asesoría en finanzas</li>
+      <li>Consultoría empresarial</li>
+      <li>Asesoría en tecnología</li>
+    </ul>
+  </section>
+</main>
+
+</body>
+</html>
+{% endblock %}
