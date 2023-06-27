@@ -1,8 +1,33 @@
 {% extends 'productos/index.html'%}
 {% block contendido %}
 {% load static %}, 
-
-
-
+<main>
+  <div class="card-group">
+    <div class="card">
+      <div class="card-body" style="background-color: #262929;">
+        <h5 class="card-title" >TELEFONO</h5>
+        <p class="card-text">¿No sabes cómo declarar tus impuestos y administrar tu negocio?</p>
+        <p class="card-text">Te apoyamos con la contabilidad e impuestos de tu negocio.</p>
+        <a href="https://wa.me/56990984905" class="card-link">CONVERSEMOS</a>
+        <a href="{% url 'servicios' %}" class="card-link">SERVICIOS</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body" style="background-color: #262929;">
+        <h5 class="card-title">UBICACION</h5>
+        <p class="card-text">AV DEL CONDOR, CIUDAD EMPRESARIAL</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5602.553534553292!2d-70.61674933399425!3d-33.38938197977472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1683674822998!5m2!1ses!2scl" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body" style="background-color: #262929;">
+        <h5 class="card-title">CORREO</h5>
+        <h4>CONTACTO@SACONSULTINGGROUP.CL</h4>
+        <p class="card-text">necesitas atencion mas personalizada registrate para ser contactado</p>
+        <a class="btn btn-primary" href="{% url 'reg' %}" role="button">REGISTRO</a>
+      </div>
+    </div>
+  </div>
+</main>
 
 {% endblock %}
