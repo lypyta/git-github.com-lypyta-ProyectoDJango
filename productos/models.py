@@ -14,3 +14,14 @@ class Cliente(models.Model):
     PrecioHora = models.IntegerField()
     Total = models.IntegerField()
     nombre_s = models.ForeignKey(Servicio, on_delete=models.PROTECT)
+
+from django.db import models
+
+class Producto(models.Model):
+    nombre = models.CharField(max_length=100)
+    precio = models.DecimalField(max_digits=10, decimal_places=2)
+
+class ItemCarrito(models.Model):
+    producto = models.ForeignKey(Producto, on_delete=models.CASCADE)
+    cantidad = models.PositiveIntegerField(default=1)
+    subtotal = models.DecimalField(max_digits=10, decimal_places=2)

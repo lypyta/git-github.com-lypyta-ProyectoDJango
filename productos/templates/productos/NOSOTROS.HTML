@@ -3,26 +3,68 @@
 {% load static %}, 
 
 <main>
-    <section>
-        <h1>Sobre Nosotros</h1>
-        <p>Somos una empresa de asesorías con más de 10 años de experiencia en el mercado. Nuestra misión es brindar soluciones integrales a nuestros clientes, ofreciendo un servicio personalizado y de calidad.</p>
-    </section>
-    <section>
-        <h2>Nuestro Equipo</h2>
-        <p>Nuestro equipo de profesionales está altamente capacitado en diversas áreas de especialización, lo que nos permite ofrecer un servicio completo y eficiente a nuestros clientes. Nos comprometemos a brindar asesoramiento de calidad y a mantenernos actualizados en todo momento.</p>
-        <ul>
-            <li>Juan Pérez - Abogado</li>
-            <li>María López - Contadora</li>
-            <li>Carlos Rodríguez - Economista</li>
-            <li>Sofía Ramírez - Marketing Digital</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Nuestra Filosofía</h2>
-        <p>En nuestra empresa, creemos en la importancia de establecer una relación cercana y confiable con nuestros clientes. Nos esforzamos por entender sus necesidades y objetivos para poder brindarles el mejor servicio posible.</p>
-        <p>Además, creemos en la importancia de la honestidad y la transparencia en nuestra labor como asesores. Siempre trabajamos con la máxima ética profesional y respetando las normas y regulaciones vigentes.</p>
-    </section>
+  <div class="card-group">
+    <div class="card">
+      <div class="card-body" style="background-color: #262929;">
+        <h5 class="card-title" >SOBRE NOSOTROS</h5>
+        <p class="card-text">Somos una empresa de asesorías con más de 10 años de experiencia en el mercado. Nuestra misión es brindar soluciones integrales a nuestros clientes, ofreciendo un servicio personalizado y de calidad.</p>
+        <p class="card-text">Te apoyamos con la contabilidad e impuestos de tu negocio.</p>
+        <a href="https://wa.me/56990984905" class="card-link">CONVERSEMOS</a>
+        <a href="{% url 'servicios' %}" class="card-link">SERVICIOS</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body" style="background-color: #262929;">
+        <h5 class="card-title">NUESTRO EQUIPO</h5>
+        <p class="card-text">Nuestro equipo de profesionales está altamente capacitado en diversas áreas de especialización, lo que nos permite ofrecer un servicio completo y eficiente a nuestros clientes. Nos comprometemos a brindar asesoramiento de calidad y a mantenernos actualizados en todo momento.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body" style="background-color: #262929;">
+        <h5 class="card-title">NUESTRA FILOSOFIA</h5>
+        <p class="card-text">En nuestra empresa, creemos en la importancia de establecer una relación cercana y confiable con nuestros clientes. Nos esforzamos por entender sus necesidades y objetivos para poder brindarles el mejor servicio posible. Además, creemos en la importancia de la honestidad y la transparencia en nuestra labor como asesores. Siempre trabajamos con la máxima ética profesional y respetando las normas y regulaciones vigentes.</p>
+      </div>
+    </div>
+  </div>
+  <h5>NUESTROS COLABORADORES</h5>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="IMG/1contadora.jpg" class="card-img-top" >
+        <div class="card-body" style="background-color: #262929;">
+          <h5 class="card-title">María López - Contadora</h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="IMG/2abogado.jpg" class="card-img-top" alt="...">
+        <div class="card-body" style="background-color: #262929;">
+          <h5 class="card-title">Juan Pérez - Abogado</h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="IMG/3economista.jpg" class="card-img-top" alt="...">
+        <div class="card-body" style="background-color: #262929;">
+          <h5 class="card-title">Carlos Rodríguez - Economista</h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="IMG/4marketing.jpg" class="card-img-top" alt="...">
+        <div class="card-body" style="background-color: #262929;">
+          <h5 class="card-title">Sofía Ramírez - Marketing Digital</h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
-</body>
-</html>
+
 {% endblock %}
